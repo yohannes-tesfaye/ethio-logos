@@ -1,8 +1,8 @@
 {
   "name": "ethio-logos",
   "version": "0.1.0",
+  "description": "A premium collection of high-quality Ethiopian brand logos as fully-customizable React & TypeScript components.",
   "type": "module",
-  "private": true,
   "sideEffects": false,
   "module": "dist/index.esm.js",
   "files": [
@@ -15,22 +15,46 @@
       "import": "./dist/index.esm.js"
     }
   },
+  "keywords": [
+    "ethiopia",
+    "ethiopian",
+    "logos",
+    "svg",
+    "react",
+    "typescript",
+    "brand",
+    "components"
+  ],
+  "author": "Yohannes Tesfaye",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yohannes-tesfaye/ethio-logos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yohannes-tesfaye/ethio-logos/issues"
+  },
+  "homepage": "https://github.com/yohannes-tesfaye/ethio-logos#readme",
   "scripts": {
     "prebuild": "rimraf src && rimraf dist",
     "build": "npm run svgr && rollup -c && tsc src/index.ts --emitDeclarationOnly --declaration --declarationDir dist --noEmit false --jsx react-jsx --module esnext --moduleResolution bundler --esModuleInterop --target esnext",
-    "svgr": "svgr --icon --title-prop --replace-attr-values '#1D1D1D=currentColor' -d src assets",
+    "svgr": "svgr --icon --title-prop -d src assets",
     "dev": "next dev",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "@babel/runtime": "^7.29.2",
-    "@rollup/plugin-node-resolve": "^16.0.3",
-    "next": "16.2.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "@babel/runtime": "^7.29.2"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "@rollup/plugin-node-resolve": "^16.0.3",
     "@babel/plugin-transform-runtime": "^7.29.0",
     "@babel/preset-env": "^7.29.5",
     "@babel/preset-react": "^7.28.5",

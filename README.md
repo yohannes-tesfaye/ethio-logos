@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ethio-Logos 🇪🇹
 
-## Getting Started
+A premium collection of high-quality Ethiopian brand logos, hand-crafted and optimized as fully customizable, responsive React components with built-in TypeScript typings.
 
-First, run the development server:
+## ✨ Features
+- ⚡ **React & Next.js ready**: Bundled cleanly as modern SVG components.
+- 🎨 **Fully Customizable**: Control size, colors (`currentColor` fallback), styles, and classes instantly.
+- 📐 **Scalable SVGs**: Hand-crafted vectors that look sharp at any resolution.
+- 📦 **TypeScript Support**: Full autocomplete and type-suggestions out-of-the-box.
+- 🪶 **Tree-shakeable**: Minimal bundle impact with clean exports.
+
+---
+
+## 🚀 Installation
+
+Install using your preferred package manager:
 
 ```bash
-npm run dev
+npm install ethio-logos
 # or
-yarn dev
+yarn add ethio-logos
 # or
-pnpm dev
-# or
-bun dev
+pnpm add ethio-logos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Import the logos just like standard React components:
 
-## Learn More
+```tsx
+import { AddisAbabaScienceAndTechnologyUniversity, Note } from 'ethio-logos';
 
-To learn more about Next.js, take a look at the following resources:
+function App() {
+  return (
+    <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+      {/* Default layout: fits parent container */}
+      <AddisAbabaScienceAndTechnologyUniversity />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+      {/* Customizable sizing, colors, and accessibility */}
+      <Note 
+        size={48} 
+        color="#0066cc" 
+        alt="A decorative heart icon" 
+        className="custom-logo"
+      />
+    </div>
+  );
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎨 Styling and Customization
+All components inherit from React's standard `SVGProps<SVGSVGElement>` with the following custom enhancements:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Prop | Type | Default | Description |
+|---|---|---|---|
+| `size` | `number \| string` | `undefined` | Shorthand to set both `width` and `height` to the same value (e.g., `24` or `"100px"`). |
+| `alt` | `string` | `undefined` | Text description that acts as the `aria-label` for screen readers (highly recommended for accessibility). |
+| `title` | `string` | `undefined` | Renders an SVG `<title>` tag inside the SVG for custom tooltip hovers. |
+| `color` / `fill` | `string` | `currentColor` | Overrides the default brand icon colors if they support `currentColor` mapping. |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+Licensed under the [MIT License](LICENSE).

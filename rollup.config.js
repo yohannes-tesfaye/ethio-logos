@@ -34,6 +34,13 @@ const config = {
       extensions,
       babelHelpers: "runtime",
       exclude: "node_modules/**",
+      babelrc: false,
+      configFile: false,
+      presets: [
+        ["@babel/preset-env", { targets: "defaults" }],
+        ["@babel/preset-react", { runtime: "automatic" }],
+        ["@babel/preset-typescript"],
+      ],
       plugins: ["@babel/plugin-transform-runtime"],
     }),
     filesize(),

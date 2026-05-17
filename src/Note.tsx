@@ -2,8 +2,8 @@ import React, { SVGProps } from "react";
 export interface EthioLogoProps extends SVGProps<SVGSVGElement> {
   size?: number | string;
   alt?: string;
-  title: string;
-  titleId: number | string;
+  title?: string;
+  titleId?: number | string;
 }
 const SvgNote = ({
   size,

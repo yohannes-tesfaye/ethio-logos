@@ -1,5 +1,5 @@
 const template = (variables, { tpl }) => {
-  return tpl`
+    return tpl `
 import React, { SVGProps } from 'react';
 
 export interface EthioLogoProps extends SVGProps<SVGSVGElement> {
@@ -29,5 +29,5 @@ const ${variables.componentName} = ({
 ${variables.exports};
   `;
 };
-
 export default template;
+//# sourceMappingURL=svgr-template.js.map

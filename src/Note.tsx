@@ -3,7 +3,7 @@ export interface EthioLogoProps extends SVGProps<SVGSVGElement> {
   size?: number | string;
   alt?: string;
   title?: string;
-  titleId?: number | string;
+  titleId?: string;
 }
 const SvgNote = ({
   size,

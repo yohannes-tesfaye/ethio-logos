@@ -1,6 +1,6 @@
 {
   "name": "ethio-logos",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A premium collection of high-quality Ethiopian brand logos as fully-customizable React & TypeScript components.",
   "type": "module",
   "sideEffects": false,

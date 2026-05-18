@@ -2,7 +2,7 @@
 
 A premium collection of high-quality SVG Ethiopian brand logos, responsive React components with built-in TypeScript typings.
 
-## ✨ Features
+## Features
 
 - **React & Next.js ready**: Bundled cleanly as modern SVG components.
 - **Customizable**: Control size, Width, Height, alt easly.
@@ -12,7 +12,7 @@ A premium collection of high-quality SVG Ethiopian brand logos, responsive React
 
 ---
 
-## 🚀 Installation
+## Installation
 
 Install using your preferred package manager:
 
@@ -26,7 +26,7 @@ pnpm add ethio-logos
 
 ---
 
-## 💻 Usage
+## Usage
 
 Import the logos just like standard React components:
 
@@ -63,6 +63,6 @@ All components inherit from React's standard `SVGProps<SVGSVGElement>` with the 
 
 ---
 
-## 📄 License
+## License
 
 Licensed under the [MIT License](LICENSE).

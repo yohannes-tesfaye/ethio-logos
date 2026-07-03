@@ -9,11 +9,11 @@ export function SiteHeader() {
       <div className="container mx-auto flex h-12 items-center gap-4 px-4">
         <Link
           href="/"
-          className="flex items-center gap-2 font-semibold text-sm"
+          className="flex items-center gap-2 font-semibold text-sm font-serif text-primary"
         >
-          <span className="size-5 rounded bg-primary text-primary-foreground inline-flex items-center justify-center text-[10px] font-bold">
+          {/* <span className="size-5 rounded bg-primary text-primary-foreground inline-flex items-center justify-center text-[10px] font-bold">
             E
-          </span>
+          </span> */}
           Ethio-Logos
           <span className="text-muted-foreground font-normal text-xs">
             v0.1.1

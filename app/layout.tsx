@@ -48,7 +48,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} ${merriweather.variable} ${jetBrainsMono.variable} font-sans h-full antialiased suppressHydrationWarning`}
+      className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} ${merriweather.variable} ${jetBrainsMono.variable} font-sans h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider

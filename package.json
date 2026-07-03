@@ -43,6 +43,7 @@
   "scripts": {
     "prebuild": "rimraf src && rimraf dist",
     "build": "npm run svgr && rollup -c && tsc src/index.ts --emitDeclarationOnly --declaration --declarationDir dist --noEmit false --jsx react-jsx --module esnext --moduleResolution bundler --esModuleInterop --target esnext",
+    "build:web": "next build",
     "svgr": "svgr --icon --title-prop -d src assets",
     "dev": "next dev",
     "start": "next start",

@@ -2,7 +2,7 @@ import * as Icons from "@/src";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="grid grid-cols-4 mx-auto gap-5 bg-zinc-50 font-sans dark:bg-black">
       {allIcons.map((item, index) => {
         const IconComponent = Icons[item.name];
         const IconType = item.isRaster ? "Raster" : "Vector";
@@ -10,24 +10,24 @@ export default function Home() {
           if (IconType === "Raster") {
             return (
               <div className="flex gap-7">
-                <h1 className="text-7xl">{index + 1}</h1>
+                {/* <h1 className="text-7xl">{index + 1}</h1> */}
                 <IconComponent
-                  className="outline-10"
+                  className="outline-10 outline-red-500"
                   color="red"
                   key={index}
-                  size={100}
+                  size={200}
                 />
               </div>
             );
           } else {
             return (
               <div className="flex gap-7">
-                <h1 className="text-7xl">{index + 1}</h1>
+                {/* <h1 className="text-7xl">{index + 1}</h1> */}
                 <IconComponent
                   className="outline-1"
                   color="blue"
                   key={index}
-                  size={200}
+                  size={500}
                 />
               </div>
             );
@@ -383,8 +383,8 @@ const allIcons = [
     isRaster: true,
   },
   {
-    name: "Ju",
-    filename: "Ju.tsx",
+    name: "JimmaUniversity",
+    filename: "JimmaUniversity.tsx",
     type: "Raster Image",
     sizeBytes: 96164,
     sizeFormatted: "93.9 KB",

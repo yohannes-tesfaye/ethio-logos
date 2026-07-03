@@ -1,4 +1,4 @@
-import { SiteHeader } from "@/components/site-header";
+import { SiteHeader } from "@/components/shared/site-header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -16,10 +16,10 @@ export default function ContributePage() {
 
       <main className="flex-1 container mx-auto px-4 py-16 md:py-24 max-w-3xl">
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-balance">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-balance">
             Contribute to Ethio-Logos
           </h1>
-          <p className="text-lg text-muted-foreground text-balance">
+          <p className="text-xl text-foreground/80 font-medium text-balance">
             Help grow the library by submitting a missing formal brand logo, or
             requesting one to be added.
           </p>
@@ -32,7 +32,7 @@ export default function ContributePage() {
               <h2 className="text-2xl font-bold tracking-tight mb-2">
                 Submit a Logo
               </h2>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-foreground/80">
                 Have an official SVG logo of an Ethiopian institution? Submit it
                 here to add it to the package.
               </p>
@@ -77,7 +77,7 @@ export default function ContributePage() {
               <h2 className="text-2xl font-bold tracking-tight mb-2">
                 Request a Logo
               </h2>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-foreground/80">
                 Need a specific brand logo that isn't in the library yet? Drop a
                 request and we'll try to find it.
               </p>
@@ -109,8 +109,8 @@ export default function ContributePage() {
         </div>
 
         <div className="mt-20 text-center rounded-lg border bg-muted/30 p-8">
-          <h3 className="text-lg font-semibold mb-2">Are you a developer?</h3>
-          <p className="text-muted-foreground text-sm mb-4 max-w-md mx-auto">
+          <h3 className="text-xl font-bold mb-2">Are you a developer?</h3>
+          <p className="text-foreground/80 text-base mb-6 max-w-md mx-auto">
             You can also contribute directly via GitHub by opening a PR with
             your SVG assets.
           </p>

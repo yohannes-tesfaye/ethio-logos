@@ -74,7 +74,15 @@
     "isRaster": false,
     "title": "Abay Bank Vertical Title (Blue Background)",
     "amharicName": "አባይ ባንክ ቀጥ ያለ ስም (ሰማያዊ ዳራ)",
-    "tags": ["abay", "bank", "finance", "banking", "vertical", "blue", "wordmark"]
+    "tags": [
+      "abay",
+      "bank",
+      "finance",
+      "banking",
+      "vertical",
+      "blue",
+      "wordmark"
+    ]
   },
   {
     "name": "AfricanUnion",
@@ -85,7 +93,13 @@
     "isRaster": true,
     "title": "African Union",
     "amharicName": "የአፍሪካ ኅብረት",
-    "tags": ["african union", "AU", "international", "organization", "addis ababa"]
+    "tags": [
+      "african union",
+      "AU",
+      "international",
+      "organization",
+      "addis ababa"
+    ]
   },
   {
     "name": "AirForce",
@@ -170,7 +184,7 @@
     "type": "Pure Vector",
     "sizeBytes": 20313,
     "sizeFormatted": "19.8 KB",
-    "isRaster": false,
+    "isRaster": true,
     "title": "Bandira Addis",
     "amharicName": "ባንዲራ አዲስ",
     "tags": ["bandira", "addis", "flag", "emblem"]
@@ -206,7 +220,14 @@
     "isRaster": true,
     "title": "Bank of Abyssinia",
     "amharicName": "የአቢሲኒያ ባንክ",
-    "tags": ["boa", "bank of abyssinia", "bank", "finance", "banking", "abyssinia"]
+    "tags": [
+      "boa",
+      "bank of abyssinia",
+      "bank",
+      "finance",
+      "banking",
+      "abyssinia"
+    ]
   },
   {
     "name": "Cbe",
@@ -217,7 +238,15 @@
     "isRaster": true,
     "title": "Commercial Bank of Ethiopia",
     "amharicName": "የኢትዮጵያ ንግድ ባንክ",
-    "tags": ["cbe", "commercial bank", "bank", "finance", "banking", "government", "state"]
+    "tags": [
+      "cbe",
+      "commercial bank",
+      "bank",
+      "finance",
+      "banking",
+      "government",
+      "state"
+    ]
   },
   {
     "name": "CbeBirr",
@@ -239,7 +268,15 @@
     "isRaster": false,
     "title": "CBE Birr (Light)",
     "amharicName": "ሲቢኢ ብር (ቀለል ያለ)",
-    "tags": ["cbe birr", "mobile money", "payment", "cbe", "fintech", "birr", "light"]
+    "tags": [
+      "cbe birr",
+      "mobile money",
+      "payment",
+      "cbe",
+      "fintech",
+      "birr",
+      "light"
+    ]
   },
   {
     "name": "Cellutech",
@@ -338,7 +375,13 @@
     "isRaster": true,
     "title": "Ethiopian Airlines",
     "amharicName": "የኢትዮጵያ አየር መንገድ",
-    "tags": ["ethiopian airlines", "airline", "aviation", "transport", "international"]
+    "tags": [
+      "ethiopian airlines",
+      "airline",
+      "aviation",
+      "transport",
+      "international"
+    ]
   },
   {
     "name": "EthiopianAirlinesSymbol",
@@ -473,15 +516,15 @@
     "tags": ["innohub", "innovation", "tech hub", "startup", "incubator"]
   },
   {
-    "name": "Ju",
-    "filename": "Ju.tsx",
+    "name": "JimmaUniversity",
+    "filename": "JimmaUniversity.tsx",
     "type": "Raster Image",
     "sizeBytes": 96164,
     "sizeFormatted": "93.9 KB",
     "isRaster": true,
     "title": "Jimma University",
     "amharicName": "ጅማ ዩኒቨርሲቲ",
-    "tags": ["ju", "jimma", "university", "education", "oromia"]
+    "tags": ["jimma", "university", "education", "oromia"]
   },
   {
     "name": "Kacha",
@@ -503,7 +546,14 @@
     "isRaster": false,
     "title": "Kuriftu Resort",
     "amharicName": "ኩሪፍቱ ሪዞርት",
-    "tags": ["kuriftu", "resort", "hotel", "hospitality", "tourism", "debre zeit"]
+    "tags": [
+      "kuriftu",
+      "resort",
+      "hotel",
+      "hospitality",
+      "tourism",
+      "debre zeit"
+    ]
   },
   {
     "name": "LegacyRealEstate",
@@ -591,7 +641,13 @@
     "isRaster": true,
     "title": "Ministry of Transport",
     "amharicName": "የትራንስፖርት ሚኒስቴር",
-    "tags": ["mot", "ministry of transport", "transport", "government", "infrastructure"]
+    "tags": [
+      "mot",
+      "ministry of transport",
+      "transport",
+      "government",
+      "infrastructure"
+    ]
   },
   {
     "name": "Mpesa",
@@ -613,7 +669,14 @@
     "isRaster": true,
     "title": "National Bank of Ethiopia",
     "amharicName": "የኢትዮጵያ ብሔራዊ ባንክ",
-    "tags": ["nbe", "national bank", "bank", "finance", "government", "central bank"]
+    "tags": [
+      "nbe",
+      "national bank",
+      "bank",
+      "finance",
+      "government",
+      "central bank"
+    ]
   },
   {
     "name": "NoahRealEstate",
@@ -767,7 +830,14 @@
     "isRaster": false,
     "title": "Sheraton Addis",
     "amharicName": "ሸራተን አዲስ",
-    "tags": ["sheraton", "hotel", "hospitality", "luxury", "addis ababa", "tourism"]
+    "tags": [
+      "sheraton",
+      "hotel",
+      "hospitality",
+      "luxury",
+      "addis ababa",
+      "tourism"
+    ]
   },
   {
     "name": "SheratonResorts",
@@ -800,7 +870,13 @@
     "isRaster": true,
     "title": "Ethiopian Sugar Corporation",
     "amharicName": "የኢትዮጵያ ስኳር ኮርፖሬሽን",
-    "tags": ["sugar corporation", "sugar", "government", "agriculture", "manufacturing"]
+    "tags": [
+      "sugar corporation",
+      "sugar",
+      "government",
+      "agriculture",
+      "manufacturing"
+    ]
   },
   {
     "name": "Sunshine",
@@ -811,7 +887,13 @@
     "isRaster": true,
     "title": "Sunshine Construction",
     "amharicName": "ሰንሻይን ኮንስትራክሽን",
-    "tags": ["sunshine", "construction", "real estate", "housing", "infrastructure"]
+    "tags": [
+      "sunshine",
+      "construction",
+      "real estate",
+      "housing",
+      "infrastructure"
+    ]
   },
   {
     "name": "Telebirr",
@@ -822,7 +904,14 @@
     "isRaster": false,
     "title": "Telebirr",
     "amharicName": "ቴሌብር",
-    "tags": ["telebirr", "mobile money", "payment", "ethio telecom", "fintech", "birr"]
+    "tags": [
+      "telebirr",
+      "mobile money",
+      "payment",
+      "ethio telecom",
+      "fintech",
+      "birr"
+    ]
   },
   {
     "name": "Tomoca",
@@ -866,7 +955,14 @@
     "isRaster": true,
     "title": "United Nations Economic Commission for Africa",
     "amharicName": "የተባበሩት መንግስታት ድርጅት የአፍሪካ ኢኮኖሚ ኮሚሽን",
-    "tags": ["uneca", "united nations", "un", "africa", "international", "addis ababa"]
+    "tags": [
+      "uneca",
+      "united nations",
+      "un",
+      "africa",
+      "international",
+      "addis ababa"
+    ]
   },
   {
     "name": "WashingtonMedical",
@@ -877,7 +973,13 @@
     "isRaster": true,
     "title": "Washington Medical Center",
     "amharicName": "ዋሽንግተን ሕክምና ማዕከል",
-    "tags": ["washington medical", "hospital", "medical", "healthcare", "clinic"]
+    "tags": [
+      "washington medical",
+      "hospital",
+      "medical",
+      "healthcare",
+      "clinic"
+    ]
   },
   {
     "name": "WegagenBank",

@@ -41,7 +41,7 @@ export { default as Hilton } from "./Hilton";
 export { default as HyattRegency } from "./HyattRegency";
 export { default as Iceaddis } from "./Iceaddis";
 export { default as Innohub } from "./Innohub";
-export { default as Ju } from "./Ju";
+export { default as JimmaUniversity } from "./JimmaUniversity";
 export { default as Kacha } from "./Kacha";
 export { default as KuriftuResort } from "./KuriftuResort";
 export { default as LegacyRealEstate } from "./LegacyRealEstate";

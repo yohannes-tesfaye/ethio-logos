@@ -39,8 +39,12 @@ function App() {
       {/* Default layout: fits parent container */}
       <Aastu />
 
-      {/* Customizable sizing, colors, and accessibility */}
-      <Cbe size={48} alt="A decorative heart icon" className="custom-logo" />
+      {/* Customizable sizing, and accessibility */}
+      <Cbe
+        size={48}
+        alt="commercial bank of ethiopia"
+        className="custom-logo"
+      />
     </div>
   );
 }

@@ -105,7 +105,11 @@ export function LogoDrawer({
         <div className="grid grid-cols-2 gap-2 px-4 text-sm mt-2">
           <div>
             <p className="text-foreground/70 mb-1">Format</p>
-            <span className="inline-flex rounded bg-muted/60 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-foreground border border-border/50">
+            <span className={`inline-flex rounded px-2 py-1 text-[10px] font-bold uppercase tracking-wider border ${
+              logo.isRaster 
+                ? "bg-amber-500/10 text-amber-600 border-amber-500/20 dark:text-amber-400"
+                : "bg-emerald-500/10 text-emerald-600 border-emerald-500/20 dark:text-emerald-400"
+            }`}>
               {logo.isRaster ? "PNG" : "SVG"}
             </span>
           </div>

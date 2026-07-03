@@ -2,48 +2,19 @@
 
 import { useState, useMemo, useEffect } from "react";
 import * as Icons from "@/src";
-import logosMetadata from "./logos-metadata.json";
+import logosMetadata from "@/app/logos-metadata.json";
 import { type LogoMeta } from "@/lib/types";
 import { SiteHeader } from "@/components/shared/site-header";
 import { LogoCard } from "@/components/shared/logo-card";
 import { LogoDrawer } from "@/components/shared/logo-drawer";
 import { Input } from "@/components/ui/input";
+import { SearchIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CheckIcon, CopyIcon, SearchIcon } from "lucide-react";
 
 const allLogos = logosMetadata as LogoMeta[];
-const svgLogos = allLogos.filter((logo) => !logo.isRaster);
+const rasterLogos = allLogos.filter((logo) => logo.isRaster);
 
-function TerminalInstall() {
-  const [copied, setCopied] = useState(false);
-  const cmd = "npm install ethio-logos";
-
-  const onCopy = () => {
-    navigator.clipboard.writeText(cmd);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  return (
-    <div className="flex items-center gap-2 rounded-lg border bg-muted/50 px-4 py-2 text-sm font-mono text-muted-foreground w-fit mx-auto cursor-pointer" onClick={onCopy}>
-      <span className="select-none">$</span>
-      <span className="text-foreground">{cmd}</span>
-      <Button
-        variant="ghost"
-        size="icon-sm"
-        className="ml-2 h-7 w-7 cursor-pointer"
-      >
-        {copied ? (
-          <CheckIcon className="h-5 w-5 text-green-600" />
-        ) : (
-          <CopyIcon className="h-5 w-5" />
-        )}
-      </Button>
-    </div>
-  );
-}
-
-export default function Home() {
+export default function WishlistPage() {
   const [query, setQuery] = useState("");
   const [selectedLogo, setSelectedLogo] = useState<LogoMeta | null>(null);
 
@@ -52,7 +23,7 @@ export default function Home() {
     const params = new URLSearchParams(window.location.search);
     const logoName = params.get("logo");
     if (logoName) {
-      const found = allLogos.find((l) => l.name === logoName);
+      const found = rasterLogos.find((l) => l.name === logoName);
       if (found) setSelectedLogo(found);
     }
   }, []);
@@ -75,13 +46,13 @@ export default function Home() {
 
   const filteredLogos = useMemo(() => {
     const q = query.toLowerCase().trim();
-    if (!q) return svgLogos;
-    return svgLogos.filter(
+    if (!q) return rasterLogos;
+    return rasterLogos.filter(
       (logo) =>
         logo.title.toLowerCase().includes(q) ||
         logo.amharicName?.includes(q) ||
         logo.tags?.some((tag) => tag.toLowerCase().includes(q)) ||
-        logo.name.toLowerCase().includes(q),
+        logo.name.toLowerCase().includes(q)
     );
   }, [query]);
 
@@ -93,18 +64,15 @@ export default function Home() {
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-16 md:py-24 text-center">
           <div className="inline-flex items-center rounded-full border bg-muted/30 px-3 py-1 text-sm text-muted-foreground mb-6">
-            <span className="flex h-2 w-2 rounded-full bg-primary/60 mr-2"></span>
-            {svgLogos.length} Official SVGs
+            <span className="flex h-2 w-2 rounded-full bg-amber-500/60 mr-2"></span>
+            {rasterLogos.length} Logos Pending SVG Conversion
           </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 max-w-5xl mx-auto">
-            SVG React Logos for <br className="hidden md:block" />
-            Ethiopian Institutions
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-balance mx-auto">
+            Vector Wishlist
           </h1>
-          <p className="max-w-2xl mx-auto text-xl text-foreground/80 font-medium mb-10">
-            A tree-shakable, TypeScript-ready package providing optimized
-            official SVG logos of Ethiopian universities, banks, and brands.
+          <p className="max-w-2xl mx-auto text-xl text-foreground/80 font-medium mb-10 text-balance">
+            These logos are currently only available as raster (PNG) images. We need high-quality vectors (SVG) for them to reach production readiness!
           </p>
-          <TerminalInstall />
         </section>
 
         {/* Search & Grid Section */}
@@ -114,29 +82,25 @@ export default function Home() {
               <SearchIcon className="absolute left-5 top-1/2 -translate-y-1/2 h-6 w-6 text-foreground/70" />
               <Input
                 type="search"
-                placeholder="Search by name, Amharic (ዩኒቨርሲቲ, ባንክ...), or tag..."
+                placeholder="Search the wishlist..."
                 className="pl-14 h-16 text-lg rounded-full bg-muted/30 border-muted-foreground/20 focus-visible:ring-primary/20"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
-            </div>
-            <div className="text-center mt-4 text-base font-medium text-foreground/80">
-              {filteredLogos.length}{" "}
-              {filteredLogos.length === 1 ? "logo" : "logos"} found
             </div>
           </div>
 
           {filteredLogos.length === 0 ? (
             <div className="text-center py-20">
               <p className="text-lg text-foreground/80 mb-4">
-                No logos found matching "{query}".
+                No raster logos found matching "{query}".
               </p>
               <Button variant="outline" onClick={() => setQuery("")}>
                 Clear search
               </Button>
             </div>
           ) : (
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 grayscale hover:grayscale-0 transition-[filter] duration-500">
               {filteredLogos.map((logo) => {
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 const Component = (Icons as any)[logo.name];

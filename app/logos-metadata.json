@@ -284,7 +284,7 @@
     "type": "Pure Vector",
     "sizeBytes": 159563,
     "sizeFormatted": "155.8 KB",
-    "isRaster": false,
+    "isRaster": true,
     "title": "Cellutech",
     "amharicName": "ሴሉቴክ",
     "tags": ["cellutech", "technology", "telecom", "tech"]
@@ -572,7 +572,7 @@
     "type": "Pure Vector",
     "sizeBytes": 3545,
     "sizeFormatted": "3.5 KB",
-    "isRaster": false,
+    "isRaster": true,
     "title": "Loline Mag",
     "amharicName": "ሎሊን ማጋዚን",
     "tags": ["loline", "magazine", "media", "publication"]
@@ -901,7 +901,7 @@
     "type": "Pure Vector",
     "sizeBytes": 2963,
     "sizeFormatted": "2.9 KB",
-    "isRaster": false,
+    "isRaster": true,
     "title": "Telebirr",
     "amharicName": "ቴሌብር",
     "tags": [

@@ -23,12 +23,15 @@ export function SiteHeader() {
         <Separator orientation="vertical" className="h-4" />
 
         <nav className="flex items-center gap-1 text-sm text-muted-foreground">
-          <Button variant="ghost" size="sm">
+          <button className="px-2 py-1 rounded-md hover:bg-muted hover:font-semibold">
             <Link href="/">Browse</Link>
-          </Button>
-          <Button variant="ghost" size="sm">
+          </button>
+          <button className="px-2 py-1 rounded-md hover:bg-muted hover:font-semibold">
+            <Link href="/wishlist">Pending SVGs</Link>
+          </button>
+          <button className="px-2 py-1 rounded-md hover:bg-muted hover:font-semibold">
             <Link href="/contribute">Contribute</Link>
-          </Button>
+          </button>
         </nav>
 
         <div className="ml-auto flex gap-2.5 items-center">

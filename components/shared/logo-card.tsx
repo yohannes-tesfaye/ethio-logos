@@ -20,7 +20,11 @@ export function LogoCard({ logo, Component, isSelected, onClick }: LogoCardProps
       }`}
     >
       <div className="absolute right-2 top-2">
-        <span className="rounded bg-muted/60 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-foreground/80 border border-border/50">
+        <span className={`inline-flex rounded px-2 py-1 text-[10px] font-bold uppercase tracking-wider border ${
+          logo.isRaster 
+            ? "bg-amber-500/10 text-amber-600 border-amber-500/20 dark:text-amber-400"
+            : "bg-emerald-500/10 text-emerald-600 border-emerald-500/20 dark:text-emerald-400"
+        }`}>
           {logo.isRaster ? "PNG" : "SVG"}
         </span>
       </div>
